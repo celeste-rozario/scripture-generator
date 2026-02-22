@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="src/styles.css" /> 
     <title>Scripture Generator</title>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
 </head>
 <body>
     <div class="container"> 
@@ -18,7 +19,7 @@
 </header>   
 <main>
     <form id="scripture-generator-form"> 
-    <input type="text" placeholder="How do you feel today?" autofocus required autocomplete="off" class="prompt"/>
+    <input type="text" placeholder="How do you feel today?" autofocus required autocomplete="off" class="prompt" id="prompt-input-bar"/>
     <input type="submit" class="submit-button"/>
 </form>
     <div class="scripture" id="scripture">
